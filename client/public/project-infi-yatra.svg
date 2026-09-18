@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Travel platform visualization</title>
+  <desc id="desc">Abstract travel platform visualization with a route line and destination markers.</desc>
+  <rect width="960" height="600" fill="#243a3a"/>
+  <path d="M110 438 C230 350 280 190 432 254 S625 475 840 160" fill="none" stroke="#8bb8a5" stroke-width="6" stroke-dasharray="14 15"/>
+  <g fill="#dfeae2"><circle cx="110" cy="438" r="15"/><circle cx="432" cy="254" r="15"/><circle cx="840" cy="160" r="15"/></g>
+  <g fill="#8bb8a5"><rect x="84" y="94" width="228" height="14"/><rect x="84" y="124" width="142" height="8" opacity=".55"/><rect x="680" y="450" width="196" height="10" opacity=".6"/></g>
+</svg>
