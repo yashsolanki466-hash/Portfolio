@@ -1,6 +1,7 @@
 /* Reference-matched adaptation of dhlabs.ai: editorial engineering studio structure, adapted to Yash Solanki’s résumé facts. */
 import { useEffect, useState } from "react";
-import { ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
+import { ArrowUpRight, ChevronDown, Menu, Moon, Sun, X } from "lucide-react";
+import { useTheme } from "../contexts/ThemeContext";
 
 const projects = [
   { id: "01", type: "PROJECT · GENOMIC DATA", name: "Avian Influenza Dashboard", tech: "React · Node.js · Express · PostgreSQL", summary: "A full-stack web application for analyzing and visualizing over 10,000 genomic datasets, with interactive React components and backend services for data visualization.", detail: "Designed data cards and frontend interactions to communicate complex datasets clearly and effectively.", image: "/manus-storage/yash-avian-dashboard_6b584a1e.png" },
@@ -26,12 +27,13 @@ export default function Home() {
   const [menu, setMenu] = useState(false);
   const [selected, setSelected] = useState<(typeof projects)[number] | null>(null);
   const [loaded, setLoaded] = useState(false);
+  const { theme, toggleTheme } = useTheme();
   useEffect(() => { const t = setTimeout(() => setLoaded(true), 550); return () => clearTimeout(t); }, []);
   return <div className={`editorial-site ${loaded ? "is-ready" : ""}`}>
     <header className="editorial-nav">
       <a href="#top" className="studio-wordmark"><span className="mark-square">Y</span><span>Yash Solanki</span></a>
       <nav className={menu ? "open" : ""}>{[["services", "Services"], ["work", "Work"], ["experience", "Experience"], ["about", "About"]].map(([href, label]) => <a key={href} href={`#${href}`} onClick={() => setMenu(false)}>{label}</a>)}<a className="nav-cta" href="#contact" onClick={() => setMenu(false)}>Talk to me <ArrowUpRight size={14} /></a></nav>
-      <button className="mobile-menu" onClick={() => setMenu(!menu)} aria-label="Toggle navigation">{menu ? <X size={19} /> : <Menu size={19} />}</button>
+      <div className="nav-actions"><button className="theme-toggle" onClick={toggleTheme} aria-label={`Switch to ${theme === "dark" ? "light" : "dark"} mode`} title={`Switch to ${theme === "dark" ? "light" : "dark"} mode`}>{theme === "dark" ? <Sun size={17} /> : <Moon size={17} />}</button><button className="mobile-menu" onClick={() => setMenu(!menu)} aria-label="Toggle navigation">{menu ? <X size={19} /> : <Menu size={19} />}</button></div>
     </header>
 
     <main id="top">
