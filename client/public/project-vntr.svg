@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Sequence processing visualization</title>
+  <desc id="desc">Abstract sequence processing visualization with repeated sequence bands.</desc>
+  <rect width="960" height="600" fill="#26332d"/>
+  <g fill="#8bb8a5">
+    <rect x="82" y="118" width="180" height="18"/><rect x="290" y="118" width="86" height="18" opacity=".55"/><rect x="406" y="118" width="220" height="18"/><rect x="656" y="118" width="110" height="18" opacity=".55"/>
+    <rect x="82" y="218" width="92" height="18" opacity=".55"/><rect x="202" y="218" width="240" height="18"/><rect x="470" y="218" width="160" height="18" opacity=".55"/><rect x="658" y="218" width="220" height="18"/>
+    <rect x="82" y="318" width="220" height="18"/><rect x="328" y="318" width="120" height="18" opacity=".55"/><rect x="474" y="318" width="250" height="18"/><rect x="752" y="318" width="126" height="18" opacity=".55"/>
+  </g>
+  <g fill="none" stroke="#dfeae2" stroke-width="3" opacity=".7"><path d="M82 468 H878"/><path d="M180 450 V486 M330 450 V486 M510 450 V486 M710 450 V486"/></g>
+</svg>

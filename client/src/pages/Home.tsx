@@ -4,8 +4,8 @@ import { ArrowUpRight, ChevronDown, Menu, Moon, Sun, X } from "lucide-react";
 import { useTheme } from "../contexts/ThemeContext";
 
 const projects = [
-  { id: "01", type: "PROJECT · GENOMIC DATA", name: "Avian Influenza Dashboard", tech: "React · Node.js · Express · PostgreSQL", summary: "A full-stack web application for analyzing and visualizing over 10,000 genomic datasets, with interactive React components and backend services for data visualization.", detail: "Designed data cards and frontend interactions to communicate complex datasets clearly and effectively.", image: "/manus-storage/yash-avian-dashboard_6b584a1e.png" },
-  { id: "02", type: "PROJECT · SEQUENCE PROCESSING", name: "VNTRseeker", tech: "Node.js · HTML · CSS · JavaScript", summary: "A web application for efficient bulk-sequence data processing with optimized backend logic for repeat-sequence workflows.", detail: "Implemented optimized backend logic resulting in a 25% improvement in data pipeline efficiency.", image: "/manus-storage/yash-vntrseeker_03b2a1e4.png" },
+  { id: "01", type: "PROJECT · GENOMIC DATA", name: "Avian Influenza Dashboard", tech: "React · Node.js · Express · PostgreSQL", summary: "A full-stack web application for analyzing and visualizing over 10,000 genomic datasets, with interactive React components and backend services for data visualization.", detail: "Designed data cards and frontend interactions to communicate complex datasets clearly and effectively.", image: "/project-avian.svg" },
+  { id: "02", type: "PROJECT · SEQUENCE PROCESSING", name: "VNTRseeker", tech: "Node.js · HTML · CSS · JavaScript", summary: "A web application for efficient bulk-sequence data processing with optimized backend logic for repeat-sequence workflows.", detail: "Implemented optimized backend logic resulting in a 25% improvement in data pipeline efficiency.", image: "/project-vntr.svg" },
 ];
 
 const capabilities = [

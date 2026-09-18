@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title desc">
+  <title id="title">Genomic data visualization</title>
+  <desc id="desc">Abstract genomic data visualization with connected nodes and chart lines.</desc>
+  <rect width="960" height="600" fill="#18352d"/>
+  <g fill="none" stroke="#8bb8a5" stroke-width="3" opacity=".75">
+    <path d="M72 430 C170 310 220 470 310 350 S470 270 540 350 S700 470 880 180"/>
+    <path d="M72 475 C190 420 230 390 325 410 S500 510 610 360 S760 250 880 270" opacity=".45"/>
+  </g>
+  <g fill="#dfeae2">
+    <circle cx="72" cy="430" r="9"/><circle cx="310" cy="350" r="9"/><circle cx="540" cy="350" r="9"/><circle cx="880" cy="180" r="9"/>
+  </g>
+  <g fill="#8bb8a5" opacity=".9"><rect x="82" y="104" width="170" height="12"/><rect x="82" y="132" width="112" height="7" opacity=".6"/><rect x="82" y="500" width="796" height="2" opacity=".35"/></g>
+</svg>
